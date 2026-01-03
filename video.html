@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Self-Intro Video — UX Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="brand" href="index.html">
+        <span class="brand-badge">UX</span>
+        <span>Tang Chii Xuan</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a data-nav href="index.html">Home</a>
+        <a data-nav href="project-mycampus.html">Project</a>
+        <a data-nav href="video.html">Video</a>
+        <a data-nav href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn" type="button" aria-label="Toggle theme">&#9728;</button>
+        <button id="mobileToggle" class="icon-btn mobile-toggle" type="button" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+      </div>
+    </div>
+
+    <div id="mobilePanel" class="mobile-panel" aria-label="Mobile navigation">
+      <div class="container">
+        <a data-nav href="index.html">Home</a>
+        <a data-nav href="project-mycampus.html">Project</a>
+        <a data-nav href="video.html">Video</a>
+        <a data-nav href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="hero">
+      <h1>Video Introduction</h1>
+    </section>
+
+    <section class="card">
+      <div class="video-wrap">
+        <iframe
+          title="Self introduction video"
+          src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+          allowfullscreen></iframe>
+      </div>
+
+      <p style="margin-top:12px;">
+        <a class="btn" href="index.html#video">Back to Home video section →</a>
+      </p>
+    </section>
+
+    <footer class="footer">© <span id="year"></span> Tang Chii Xuan</footer>
+  </main>
+
+  <button id="backToTop" class="top-btn" type="button" aria-label="Back to top">↑</button>
+
+  <script src="main.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

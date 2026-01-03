@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tang Chii Xuan | UX Portfolio</title>
+  <meta name="description" content="UX Portfolio website" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="brand" href="index.html">
+        <span class="brand-badge">UX</span>
+        <span>Tang Chii Xuan</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a data-nav href="index.html">Home</a>
+        <a data-nav href="project-mycampus.html">Project</a>
+        <a data-nav href="video.html">Video</a>
+        <a data-nav href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn" type="button" aria-label="Toggle theme">&#9728;</button>
+        <button id="mobileToggle" class="icon-btn mobile-toggle" type="button" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+      </div>
+    </div>
+
+    <div id="mobilePanel" class="mobile-panel" aria-label="Mobile navigation">
+      <div class="container">
+        <a data-nav href="index.html">Home</a>
+        <a data-nav href="project-mycampus.html">Project</a>
+        <a data-nav href="video.html">Video</a>
+        <a data-nav href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="hero section" id="top">
+      <div class="hero-grid">
+        <div class="hero-panel">
+          <p class="kicker">UI/UX Designer - Student</p>
+          <h1 class="no-wrap">MyCampus AR Navigation Map</h1>
+          <p class="hero-subtitle">
+            Wayfinding experience that blends AR cues with clear, tested task flows so students and visitors reach destinations with confidence.
+          </p>
+          <div style="margin-top:18px;">
+            <a class="btn" href="project-mycampus.html">View case study -></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="grid">
+      <section class="card section" id="featured">
+        <h2>Featured Project</h2>
+        <p><strong>MyCampus AR Navigation Map</strong> - a mobile AR wayfinding prototype that helps students and visitors navigate multi-floor campus buildings with confidence.</p>
+        <p>It combines AR directional guidance with 2D route preview, safety + calibration flow, and recovery support to reduce confusion and navigation stress.</p>
+        <a class="btn" href="project-mycampus.html">View case study -></a>
+      </section>
+
+      <aside class="card section" id="skills">
+        <h2>Skills &amp; Tools</h2>
+        <ul>
+          <li>Figma (wireframing + high-fidelity prototyping)</li>
+          <li>User research synthesis (PACT analysis)</li>
+          <li>Information architecture + task flows</li>
+          <li>Low-fidelity paper prototyping</li>
+          <li>Usability testing (task-based testing + survey feedback)</li>
+          <li>Iteration & UI improvements based on findings</li>
+        </ul>
+      </aside>
+    </div>
+
+    <section class="card section" id="video">
+      <h2>Self-Intro Video</h2>
+
+      <div class="video-wrap" aria-label="Video embed">
+        <iframe
+          title="Self introduction video"
+          src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+      <p style="margin-top:12px;">
+        <a class="btn" href="video.html">Open video page -></a>
+      </p>
+    </section>
+
+    <section class="card section" id="contact">
+      <h2>Contact</h2>
+      <p><strong>Email:</strong> <a href="tangcx03@gmail.com">tangcx03@gmail.com</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/chii-xuan-tang-4b27a32a1/" target="_blank" rel="noreferrer">Tang Chii Xuan</a></p>
+      <p><strong>Resume:</strong> <a href="https://drive.google.com/file/d/1pa0JJZg_L-vephCv5WmP6ZIYGIN4iDEw/view?usp=sharing" target="_blank" rel="noreferrer">Download PDF</a></p>
+    </section>
+
+    <footer class="footer">(c) <span id="year"></span> Tang Chii Xuan</footer>
+  </main>
+
+  <button id="backToTop" class="top-btn" type="button" aria-label="Back to top">Top</button>
+
+  <script src="main.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
+
+

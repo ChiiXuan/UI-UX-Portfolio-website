@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MyCampus AR Navigation Map — Case Study</title>
+  <meta name="description" content="UX case study: MyCampus AR Navigation Map" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="brand" href="index.html">
+        <span class="brand-badge">UX</span>
+        <span>Tang Chii Xuan</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a data-nav href="index.html">Home</a>
+        <a data-nav href="project-mycampus.html">Project</a>
+        <a data-nav href="video.html">Video</a>
+        <a data-nav href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn" type="button" aria-label="Toggle theme">&#9728;</button>
+        <button id="mobileToggle" class="icon-btn mobile-toggle" type="button" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+      </div>
+    </div>
+
+    <div id="mobilePanel" class="mobile-panel" aria-label="Mobile navigation">
+      <div class="container">
+        <a data-nav href="index.html">Home</a>
+        <a data-nav href="project-mycampus.html">Project</a>
+        <a data-nav href="video.html">Video</a>
+        <a data-nav href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="hero">
+      <p class="kicker">Case Study</p>
+      <h1>MyCampus AR Navigation Map</h1>
+      <p>Campus navigation can be confusing for new students and visitors, especially in multi-floor buildings. MyCampus AR Navigation Map is an AR wayfinding prototype that combines 2D route preview with turn-by-turn AR guidance. The design was developed through research, prototyping, and usability testing to improve clarity and confidence while navigating.</p>
+      
+    </section>
+
+    <div class="case-layout">
+      <aside class="toc" data-toc></aside>
+
+      <article>
+        <!-- REQUIRED: Project Overview -->
+        <section class="card section" id="overview">
+          <h2 id="project-overview">Project Overview</h2>
+          <h3 id="objectives">Objectives</h3>
+          <p>Design an AR-based campus navigation experience that is interactive, intuitive, and trustworthy. The goal is to reduce confusion, reduce the time needed to find destinations, and improve overall navigation satisfaction for students, staff, and visitors.</p>
+
+          <h3 id="target-users">Target Users</h3>
+          <p>The primary users are new university students and campus visitors who frequently navigate large or unfamiliar campus environments. They often struggle with complex layouts and limited signage, especially at the start of the semester or during events.</p>
+
+          <h3 id="problem-space">Problem Space</h3>
+          <p>Traditional printed maps and signboards are not interactive or real-time, making navigation time-consuming and stressful. Indoor navigation also faces challenges like signal limitations, multi-floor routing, and difficulty confirming “where am I” and “which way should I go” quickly while walking.</p>
+        </section>
+
+        <!-- REQUIRED: Design Process -->
+        <section class="card section" id="process">
+          <h2 id="design-process">Design Process</h2>
+
+          <h3 id="research">Research</h3>
+          <p>We conducted a survey-based research plan using Google Forms to identify campus navigation difficulties and explore how AR can improve navigation efficiency. Findings showed that navigation stress often happens during rush times (e.g., being late), and users strongly preferred AR arrows/labels and real-time assistance. However, users also raised concerns about device performance (battery drain/overheating/lag) and AR tracking reliability in dark or crowded areas.</p>
+
+          <h3 id="ideation">Ideation</h3>
+          <p>Based on the research themes, we ideated around “reliability and trust” during navigation. We focused on reducing cognitive load under time pressure (e.g., showing ETA/clear guidance), supporting different contexts (lighting/crowds), and improving indoor accuracy using cross-channel ideas such as QR “phygital” anchoring at building entrances.</p>
+
+                    <h3 id="wireframing">Wireframing</h3>
+          <div class="wireframe-gallery">
+            <figure>
+              <img src="paper prototype 1.jpeg" alt="Paper prototype sketches showing AR navigation cues and arrival screens" loading="lazy" />
+              <figcaption>Paper prototype screens: home, search/map, safety notice, profile/saved places.</figcaption>
+            </figure>
+            <figure>
+              <img src="paper prototype 2.jpeg" alt="Paper prototype sketches for home, search, map, safety, and profile screens" loading="lazy" />
+              <figcaption>Paper prototype: AR navigation cues, turn/straight guidance, and arrival confirmation.</figcaption>
+            </figure>
+          </div>
+          <p>We created low-fidelity paper prototype screens to quickly validate layout and user flow before moving into digital design. Key screens included Home Dashboard, Search, 2D Map Preview, AR Navigation cues, Safety Notice, Calibration, and Destination Arrival. This helped us identify missing elements early and refine the flow at low cost.</p>
+
+          <h3 id="prototyping">Prototyping</h3>
+          <div class="proto-carousel">
+            <button class="proto-nav prev" type="button" aria-label="Previous screens">&#8592;</button>
+            <div class="proto-slider-window">
+              <div class="proto-slider-track">
+                <figure><img src="d1.png" alt="Hi-fi login screen" loading="lazy" /></figure>
+                <figure><img src="d2.png" alt="Hi-fi home screen with quick actions" loading="lazy" /></figure>
+                <figure><img src="d3.png" alt="Search results list" loading="lazy" /></figure>
+                <figure><img src="d4.png" alt="Safety notice before AR" loading="lazy" /></figure>
+                <figure><img src="d5.png" alt="AR calibration step" loading="lazy" /></figure>
+                <figure><img src="d6.png" alt="Profile and saved places" loading="lazy" /></figure>
+                <figure><img src="d7.png" alt="2D map view" loading="lazy" /></figure>
+                <figure><img src="d8.png" alt="AR navigation hallway view" loading="lazy" /></figure>
+                <figure><img src="d9.png" alt="AR navigation lobby view" loading="lazy" /></figure>
+                <figure><img src="d10.png" alt="Arrival confirmation screen" loading="lazy" /></figure>
+                <figure><img src="d11.png" alt="Route summary start screen" loading="lazy" /></figure>
+              </div>
+            </div>
+            <button class="proto-nav next" type="button" aria-label="Next screens">&#8594;</button>
+          </div>
+          <p>We structured the app into five main modules: Home Dashboard, Navigation Flow, AR Navigation Mode, Recovery & Support, and Help & Tutorial. The AR mode includes safety notice and calibration before entering the camera-based navigation, plus tracking checks and automatic rerouting to maintain continuity. Multi-story navigation is supported with stair/lift guidance.</p>
+
+          <h3 id="testing">Testing</h3>
+          <p>We ran task-based usability tests to evaluate key flows such as locating stairs on the 2D map, login clarity (student vs guest), and browsing/searching in staff/facility directory. We observed user hesitation, confusion points, and collected feedback to drive refinements.</p>
+        </section>
+
+        <!-- REQUIRED: Design Artifacts -->
+                <section class="card section" id="artifacts">
+          <h2 id="design-artifacts">Design Artifacts</h2>
+
+          <ul class="artifact-points">
+            <li><strong>Research:</strong> Survey plan + key findings/themes (stress, AR demand, technical barriers).</li>
+            <li><strong>PACT summary:</strong> People / Activities / Contexts / Technologies constraints for campus navigation.</li>
+            <li><strong>Information architecture:</strong> 5 main modules + key screens.</li>
+            <li><strong>Task flows:</strong> Select destination → route preview → safety + calibration → AR navigation → arrival.</li>
+            <li><strong>Low-fidelity artifacts:</strong> Paper prototype screens (home, search, map preview, AR cues, safety, calibration, arrival).</li>
+            <li><strong>Hi-fi prototype screenshots:</strong> Key screens for login, home, 2D map, AR navigation, directory.</li>
+            <li><strong>Usability testing notes:</strong> Findings + iteration changes (before/after if available).</li>
+          </ul>
+        </section>
+
+        <!-- REQUIRED: Challenges & Solutions -->
+        <section class="card section" id="challenges">
+          <h2 id="challenges-solutions">Challenges & Solutions</h2>
+          <div class="challenge-list">
+            <article class="challenge-item">
+              <header>
+                <span class="pill">Challenge 1</span>
+                <h3>Stair icon visibility on the 2D map</h3>
+              </header>
+              <p>Users confused stairs/lift icons with wall and room markers; vertical navigation was hard to spot without zooming.</p>
+              <div class="solution-block">
+                <span class="pill pill-solution">Solution</span>
+                <p>Increase icon contrast and hierarchy, add consistent stair/lift labels, and keep them visible at mid zoom levels.</p>
+              </div>
+            </article>
+
+            <article class="challenge-item">
+              <header>
+                <span class="pill">Challenge 2</span>
+                <h3>Student vs Guest login confusion</h3>
+              </header>
+              <p>Primary and secondary actions looked too similar, leading to accidental taps and unclear entry paths.</p>
+              <div class="solution-block">
+                <span class="pill pill-solution">Solution</span>
+                <p>Differentiate primary vs secondary buttons (“Sign In” vs “Guest Login”), clarify copy, and add inline validation states.</p>
+              </div>
+            </article>
+
+            <article class="challenge-item">
+              <header>
+                <span class="pill">Challenge 3</span>
+                <h3>Directory felt long and heavy</h3>
+              </header>
+              <p>Users experienced cognitive overload scanning long lists with minimal grouping or filters.</p>
+              <div class="solution-block">
+                <span class="pill pill-solution">Solution</span>
+                <p>Add category chips/filters at the top, restructure list groupings, and surface quick access to common destinations.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- REQUIRED: Results -->
+        <section class="card section" id="results">
+          <h2 id="results-section">Results</h2>
+          <p>Overall, testing showed that most users found the login process easy to follow and the AR navigation interface generally clear and understandable. However, usability testing also surfaced key improvement areas (stair icon clarity and directory browsing). After iteration, we improved map icon hierarchy, clarified login pathways, and optimized directory scanning with search filters to reduce confusion and effort.</p>
+        </section>
+
+        <!-- REQUIRED: Your Role -->
+        <section class="card section" id="role">
+          <h2 id="your-role">My Role</h2>
+          <p>This was a group project. My main contributions were:</p>
+          <ul>
+            <li>Created the Wireframes / Paper Prototype Screens (low-fidelity screens + screen descriptions) to define structure and user flow early.</li>
+            <li>Contributed to Design Goal and High-Fidelity Prototype Screens in the later stage to support the final prototype direction.</li>
+          </ul>
+        </section>
+
+        <section class="card section" id="next">
+          <h2 id="next-steps">Next Steps</h2>
+          <ul>
+            <li>Improve robustness in dark/crowded environments with adaptive contrast and guidance for tracking issues.</li>
+            <li>Optimize performance for lower-end devices (heat/battery).</li>
+            <li>Add optional voice guidance plus stronger real-time feedback (ETA cues) to lower cognitive load under time pressure.</li>
+            <li>Expand accessibility personalization.</li>
+            <li>Strengthen indoor accuracy using QR-based anchoring at entrances and key decision points.</li>
+          </ul>
+        </section>
+
+        <p style="margin-top:14px;">
+          <a class="btn" href="index.html">← Back to Home</a>
+        </p>
+      </article>
+    </div>
+
+    <footer class="footer">
+      © <span id="year"></span> Tang Chii Xuan
+    </footer>
+  </main>
+
+  <button id="backToTop" class="top-btn" type="button" aria-label="Back to top">↑</button>
+
+  <script src="main.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
